@@ -1,0 +1,146 @@
+
+O143	faucet	1
+S91	off (ready)
+O241	measuring cup	0
+S46	empty
+M61	pick-and-place	<Assumed>
+O241	measuring cup	0
+S7	below	[faucet]
+S46	empty
+//
+O143	faucet	1
+S91	off (ready)
+M117	turn on	<Assumed>
+O143	faucet	1
+S93	on
+O414	water	0
+S58	from	[faucet]
+S81	liquid
+//
+O370	stove	0
+S90	off
+M117	turn on	<Assumed>
+O370	stove	0
+S93	on
+//
+O143	faucet	1
+S93	on
+O414	water	0
+S58	from	[faucet]
+S81	liquid
+O241	measuring cup	0
+S7	below	[faucet]
+S46	empty
+M36	fill	<Assumed>
+O241	measuring cup	0
+S7	below	[faucet]
+S24	contains	{water}
+O414	water	0
+S72	in	[measuring cup]
+S81	liquid
+//
+O241	measuring cup	1
+S46	empty
+O370	stove	0
+S91	off (ready)
+M61	pick-and-place	<Assumed>
+O306	pot	1
+S46	empty
+S93	on	[stove]
+O370	stove	0
+S91	off (ready)
+S156	with	[pot]
+//
+O370	stove	0
+S93	on
+O306	pot	0
+S46	empty
+M61	pick-and-place	<0:42,0:45>
+O370	stove	0
+S93	on
+S156	with	[pot]
+O306	pot	0
+S69	heated
+S93	on	[stove]
+//
+O306	pot	0
+S46	empty
+S93	on	[stove]
+O241	measuring cup	1
+S7	below	[faucet]
+S24	contains	{water}
+O414	water	1
+S72	in	[measuring cup]
+S81	liquid
+M65	pour	<Assumed>
+O306	pot	0
+S24	contains	{water}
+S93	on	[stove]
+O414	water	1
+S72	in	[pot]
+S81	liquid
+//
+O306	pot	1
+S24	contains	{water}
+S93	on	[stove]
+O370	stove	0
+S93	on
+S156	with	[pot]
+M5	boil	<Assumed>
+O306	pot	1
+S24	contains	{water}
+S71	hot
+S93	on	[stove]
+O414	water	0
+S11	boiling
+S72	in	[pot]
+S81	liquid
+//
+O306	pot	0
+S24	contains	{water}
+S71	hot
+S93	on	[stove]
+O350	shaker	1
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[shaker]
+M101	sprinkle	<Assumed>
+O306	pot	0
+S24	contains	{salt,water}
+S71	hot
+S93	on	[stove]
+O336	salt	1
+S63	granulated
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{salt,water}
+S71	hot
+S93	on	[stove]
+O210	jar	1
+S24	contains	{macaroni}
+O229	macaroni	1
+S72	in	[jar]
+S109	raw
+M65	pour	<0:26,0:40>
+O306	pot	0
+S24	contains	{macaroni,salt,water}
+S71	hot
+S93	on	[stove]
+O229	macaroni	1
+S72	in	[pot]
+S109	raw
+//
+O306	pot	0
+S24	contains	{macaroni,salt,water}
+S71	hot
+S93	on	[stove]
+O229	macaroni	1
+S72	in	[pot]
+S109	raw
+M16	cook	<Assumed>
+O229	macaroni	0
+S25	cooked
+S72	in	[pot]
+//

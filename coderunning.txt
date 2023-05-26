@@ -1,0 +1,6 @@
+1) Run the code.py file.
+2) Code takes 15-17s to run each time.
+3) Two files for each goal node searched will be created.
+4) solution.txt represents the original file retrived.
+5) modifiedsolution.txt represents the file modified after churning out extra inputs. This is the heuristic file.
+

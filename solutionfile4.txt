@@ -1,0 +1,19 @@
+
+O128	drinking glass	0
+S46	empty
+O47	bucket	0
+S24	contains	{ice}
+O206	ice	1
+S33	crushed
+S60	frozen
+S72	in	[bowl]
+O241	measuring cup	1
+S46	empty
+M86	scoop and pour	<Assumed>
+O128	drinking glass	0
+S24	contains	{ice}
+O206	ice	1
+S33	crushed
+S60	frozen
+S72	in	[drinking glass]
+//

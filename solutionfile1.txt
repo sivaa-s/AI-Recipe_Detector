@@ -1,0 +1,249 @@
+
+O241	measuring cup	0
+S46	empty
+O61	carton	1
+S24	contains	{milk}
+O244	milk	1
+S72	in	[carton]
+S81	liquid
+M53	measure	<Assumed>
+O241	measuring cup	0
+S24	contains	{milk}
+O244	milk	1
+S72	in	[measuring cup]
+S81	liquid
+//
+O248	mixer	0
+S91	off (ready)
+S156	with	[mixing bowl]
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S46	empty
+O277	packet	1
+S24	contains	{cream cheese}
+S95	opened
+O115	cream cheese	1
+S9	block
+S72	in	[packet]
+M61	pick-and-place	<Assumed>
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{cream cheese}
+O115	cream cheese	1
+S9	block
+S72	in	[mixing bowl]
+//
+O248	mixer	0
+S93	on
+S156	with	[mixing bowl]
+O56	can	1
+S24	contains	{condensed milk}
+O100	condensed milk	1
+S72	in	[can]
+S144	thick liquid
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{cream cheese}
+O364	spatula	1
+M65	pour	<0:30,0:38>
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese}
+O100	condensed milk	1
+S72	in	[mixing bowl]
+S144	thick liquid
+//
+O248	mixer	0
+S93	on
+S156	with	[mixing bowl]
+O277	packet	1
+S24	contains	{pudding mix}
+S95	opened
+O314	pudding mix	1
+S72	in	[packet]
+S106	powder
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese,pudding mix}
+M66	pour and blend	<0:41,0:51>
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese,pudding mix}
+O314	pudding mix	1
+S72	in	[mixing bowl]
+S106	powder
+//
+O248	mixer	0
+S93	on
+S156	with	[mixing bowl]
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese,pudding mix}
+O241	measuring cup	1
+S24	contains	{milk}
+O244	milk	1
+S72	in	[measuring cup]
+S81	liquid
+M66	pour and blend	<0:55,1:35>
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese,milk,pudding mix}
+O244	milk	1
+S72	in	[mixing bowl]
+S81	liquid
+//
+O248	mixer	1
+S93	on
+S156	with	[mixing bowl]
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{cream cheese}
+O115	cream cheese	1
+S9	block
+S72	in	[mixing bowl]
+M4	blend	<0:23,0:28>
+O115	cream cheese	1
+S72	in	[mixing bowl]
+S133	softened
+//
+O248	mixer	0
+S93	on
+S156	with	[mixing bowl]
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese,milk,pudding mix}
+O249	mixing bowl	1
+S24	contains	{vanilla extract}
+O407	vanilla extract	1
+S72	in	[mixing bowl]
+S81	liquid
+M65	pour	<1:38,1:40>
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+O407	vanilla extract	1
+S72	in	[mixing bowl]
+S81	liquid
+//
+O248	mixer	0
+S91	off (ready)
+S156	with	[mixing bowl]
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S46	empty
+M117	turn on	<1:10,1:11>
+O248	mixer	0
+S93	on
+S156	with	[mixing bowl]
+//
+O34	bowl	0
+S46	empty
+O49	butter	1
+S72	in	[packet]
+S140	stick
+M61	pick-and-place	<1:22,1:25>
+O34	bowl	0
+S24	contains	{butter}
+O49	butter	1
+S72	in	[bowl]
+S140	stick
+//
+O26	blender jar	1
+S46	empty
+O23	blender	0
+S91	off (ready)
+M1	attach	<Assumed>
+O26	blender jar	1
+S1	attached to	[blender]
+S46	empty
+O23	blender	0
+S91	off (ready)
+S156	with	[blender jar]
+//
+O248	mixer	0
+S93	on
+S156	with	[mixing bowl]
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+O115	cream cheese	1
+S72	in	[mixing bowl]
+S133	softened
+O407	vanilla extract	1
+S72	in	[mixing bowl]
+S81	liquid
+O244	milk	1
+S72	in	[mixing bowl]
+S81	liquid
+O314	pudding mix	1
+S72	in	[mixing bowl]
+S106	powder
+O100	condensed milk	1
+S72	in	[mixing bowl]
+S144	thick liquid
+M4	blend	<Assumed>
+O249	mixing bowl	0
+S1	attached to	[mixer]
+S24	contains	{pudding}
+O313	pudding	1
+S24	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+S72	in	[mixing bowl]
+S87	mixed
+S144	thick liquid
+//
+O248	mixer	0
+S93	on
+S156	with	[mixing bowl]
+M116	turn off	<1:54,1:55>
+O248	mixer	0
+S90	off
+S156	with	[mixing bowl]
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S46	empty
+O34	bowl	1
+S24	contains	{butter}
+O49	butter	1
+S72	in	[bowl]
+S140	stick
+O364	spatula	1
+M88	scrape	<Assumed>
+O364	spatula	1
+O34	bowl	1
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{butter}
+O49	butter	1
+S72	in	[blender jar]
+S140	stick
+//
+O248	mixer	0
+S90	off
+S156	with	[mixing bowl]
+O249	mixing bowl	1
+S1	attached to	[mixer]
+S24	contains	{pudding}
+M29	detach	<Assumed,Ass>
+O248	mixer	0
+S90	off
+O249	mixing bowl	1
+S24	contains	{pudding}
+//
+O249	mixing bowl	0
+S24	contains	{pudding}
+O210	jar	1
+S24	contains	{whipped cream}
+O419	whipped cream	1
+S30	creamy
+S72	in	[jar]
+S154	whipped
+O364	spatula	1
+M65	pour	<2:00,2:07>
+O249	mixing bowl	0
+S24	contains	{pudding,whipped cream}
+O419	whipped cream	1
+S30	creamy
+S72	in	[mixing bowl]
+S154	whipped
+//
